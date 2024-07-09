@@ -1,13 +1,16 @@
-# Population Predictions for the 1960s (county-age-year)
+# Population predictions for the 1960s by county-age-year
 
 **Data Appendix for Kose, Manley, Miller (forthcoming):** _Backcasting Population Data for Children in the 1960s with Supervised Learning_
 ---
 
 ## Background
-There are no publicly available population counts -- by county, age, and year -- for the years 1961-1968. 
-
-Before the Survey of Epidemiological End Results (SEER) posted their first intercensal tabulation in 1969, the only measure of population counts available was the decadal Census. Yet, researchers oftem  study programs that were administered in the 1960s and scale exposure (e.g., funding) based on the presumed treatment population. One such example from the economics literature are Head Start roll-out studies 
-
-In Kose, Manley, Miller (forthcoming), we use a neural network to _predict_ population counts by county, age, and year in the 1960s. Our model combines over 200 demographic features to generate predictions for 1-20 year-olds in the years 1961-1968. 
+Before the Survey of Epidemiological End Results (SEER) posted their first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (forthcoming) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 57\%. 
 
 ## Data provided in this repository
+This repository contains one CSV file: `kose_manley_miller_population_predictions.csv`. This file contains five variables: 
+- `superfips`: county identifier
+- `age`: age (integer: 0-20).
+- `year`:
+- `truth`:
+- `li`:
+- `yhat`:
