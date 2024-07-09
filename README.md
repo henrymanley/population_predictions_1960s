@@ -1,5 +1,6 @@
 # Population Predictions for the 1960s (county-age-year)
-### Data Appendix for Kose, Manley, Miller (forthcoming)
+
+**Data Appendix for Kose, Manley, Miller (forthcoming):** _Backcasting Population Data for Children in the 1960s with Supervised Learning_
 ---
 
 ## Background
