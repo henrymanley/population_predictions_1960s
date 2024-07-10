@@ -1,5 +1,5 @@
 # Population predictions for the 1960s, by county-age-year
-Data Appendix to Kose, Manley, Miller (2024)
+Data appendix to Kose, Manley, Miller (2024)
 ---
 
 
