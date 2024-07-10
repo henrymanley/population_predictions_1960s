@@ -22,7 +22,7 @@ This repository contains two ZIP files: `kmm_population_predictions_1960s.zip` a
 
 The file `kmm_population_predictions_1960s.zip` contains observations for the 1960s. The file `kmm_population_predictions_1960s.zip` contains observations for the 1970s and 1980s. We split these data into two files to respect GitHub's file size restriction of 25 MB. We recommend appending these two files, in practice. Though, if the principal interest is to use solely the population predictions for 1961-1968, the `kmm_population_predictions_1960s.zip` file will suffice. 
 
-Broadly, we include data for the 1970s and 1980s as a complement to the 1960s predictions, in terms of usability and scope. For instance, if a researcher is interested in studying a program administered in the 1960s and 1970s, our data makes it easy to use both our population predictions (`yhat`) in the 1960s and Census-based estimates (`truth`) in the 1970s without having to query another data source.
+Broadly, we include data for the 1970s and 1980s as a complement to the 1960s predictions, in terms of usability and scope. For instance, if a researcher is interested in studying a program administered in the 1960s and 1970s, our data makes it easy to use both our population predictions (`yhat`) in the 1960s and Census-based estimates (`truth`) in the 1970s without having to query another data source. Version release history can be found [here](https://github.com/henrymanley/population_predictions_1960s/commits/main/).
 
 ## Our recommended implementation
 To ensure researchers use the "best" measures of population for their empirical usecase, we recommend that: 
