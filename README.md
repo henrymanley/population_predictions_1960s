@@ -32,12 +32,12 @@ To ensure researchers use the "best" measures of population for their empirical 
   
 Taken together, the `kmm_population` variable in our data implements these recommendations. 
 
-## Holdout counties 
+## A note on holdout counties 
 A random sample of 10\% of counties in our data are set aside as "hold-out" counties. These are counties for which data is not used in any way to train the neural network. The final results we wish to show in our paper, once given a conditional acceptance from an editor, will use these counties to measure our model's out-of-sample goodness of fit. Consequently, we have not produced population predictions for these counties yet: 10\% of counties from 1961-1968 will have missing values for `yhat`. We are willing to make these predictions available upon request, but we will not produce any goodness of fit measures for such data. 
 
 
 ## Citation
-Please use the following citation when using this data, :
+Please use the following citation when using this data:
 
 Kose, Esra, Manley, Henry, Miller, Douglas L. 2024. _Backcasting Population Data for Children in the 1960s with
 Supervised Learning._
