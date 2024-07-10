@@ -12,7 +12,7 @@ This repository contains two ZIP files: `kmm_population_predictions_1960s.zip` a
 - `superfips`: county identifier
 - `county_name`: US county name
 - `state_abb`: two-character US state abbreviation
-- `age`: single year of age (integer: 0-20).
+- `age`: single year of age (0-20).
 - `year`: year
 - `truth`: "true" population count reported by \{1960: the 1960 Census, 1969-1989: SEER\}
 - `births`: the count of live births
