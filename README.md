@@ -29,8 +29,9 @@ To ensure researchers use the "best" measures of population for their empirical 
 - For the years 1960 and 1969-1989, use `truth` as your measure of population
 - For the years 1961-1968, use `yhat` as your measure of population
 - For 0-year olds (in all years), use `births` as your measure of population
-  
-Taken together, the `kmm_population` variable in our data implements these recommendations. 
+
+>[!NOTE]
+>Taken together, the `kmm_population` variable in our data implements these recommendations. 
 
 ## Citation
 Please use the following citation when using this data:
