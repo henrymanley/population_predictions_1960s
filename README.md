@@ -7,7 +7,7 @@ Data appendix to Kose, Manley, Miller (2024)
 Before the Survey of Epidemiological End Results ([SEER](https://seer.cancer.gov/)) posted its first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (2024) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 57\%. 
 
 ## Data provided in this repository
-This repository contains two ZIP files: `kmm_population_predictions_1960s.zip` and `kmm_population_predictions_1970s_1980s.zip`. Each ZIP file contains one CSV file with ten variables: 
+This repository contains two ZIP files $-$ `kmm_population_predictions_1960s.zip` and `kmm_population_predictions_1970s_1980s.zip` $-$ and one CSV file, `kmm_superfips_xwalk.csv`. Each ZIP file contains one CSV file with ten variables: 
 
 - `superfips`: county identifier
 - `county_name`: US county name
@@ -22,6 +22,8 @@ This repository contains two ZIP files: `kmm_population_predictions_1960s.zip` a
 
 The file `kmm_population_predictions_1960s.zip` contains observations for the 1960s. The file `kmm_population_predictions_1960s.zip` contains observations for the 1970s and 1980s. We split these data into two files to respect GitHub's file size restriction of 25 MB. We recommend appending these two files, in practice. Though, if the principal interest is to use solely the population predictions for 1961-1968, the `kmm_population_predictions_1960s.zip` file will suffice. 
 
+The file `kmm_superfips_xwalk.csv` is a county indentifier crosswalk that links our preferred, time-constant, identifier $-$ "super FIPS" codes $-$ to FIPS and NCHS codes. The process by which we build our super FIPS code is described in the appendix to our paper. In general, super FIPS-level aggregation is meaningfully different from using FIPS codes for only a handful of counties. Most common are counties in Virginia, New York City, Hawaii, and Alaska.
+
 Broadly, we include data for the 1970s and 1980s as a complement to the 1960s predictions, in terms of usability and scope. For instance, if a researcher is interested in studying a program administered in the 1960s and 1970s, our data makes it easy to use both our population predictions (`yhat`) in the 1960s and Census-based estimates (`truth`) in the 1970s without having to query another data source. Version release history can be found [here](https://github.com/henrymanley/population_predictions_1960s/commits/main/).
 
 ## Our recommended implementation
@@ -30,8 +32,7 @@ To ensure researchers use the "best" measures of population for their empirical 
 - For the years 1961-1968, use `yhat` as your measure of population
 - For 0-year olds (in all years), use `births` as your measure of population
 
->[!NOTE]
->Taken together, the `kmm_population` variable in our data implements these recommendations. 
+Taken together, the `kmm_population` variable in our data implements these recommendations. 
 
 ## Citation
 Please use the following citation when using this data:
