@@ -5,7 +5,7 @@ Data appendix to Kose, Manley, Miller (2024)
 > Data and documentation in this repository are from the 07/19/2024 release
 
 ## Background
-Before the Survey of Epidemiological End Results ([SEER](https://seer.cancer.gov/)) posted its first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (2024) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 57\%. 
+Before the Survey of Epidemiological End Results ([SEER](https://seer.cancer.gov/)) posted its first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (2024) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 59\%. 
 
 ## Data provided in this repository
 ### 1. Prediction files
