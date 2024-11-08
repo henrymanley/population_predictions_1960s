@@ -2,10 +2,10 @@
 Data appendix to Kose, Manley, Miller (2024)
 ---
 >[!NOTE]
-> Data and documentation in this repository are from the 07/19/2024 release
+> Data and documentation in this repository are from the 11/08/2024 release
 
 ## Background
-Before the Survey of Epidemiological End Results ([SEER](https://seer.cancer.gov/)) posted its first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (2024) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 59\%. 
+Before the Survey of Epidemiological End Results ([SEER](https://seer.cancer.gov/)) posted its first intercensal tabulation in 1969, the only available measure of population counts $-$ by county, age, and year $-$ was from the decadal Census. Consequently, there are no publicly available population counts for the years 1961-1968. Kose, Manley, Miller (2024) documents this occurence and puts forth a neural network model that predicts population counts for ages 1-20 in the years 1961-1968. Their predictions draw from a collection of over 200 predictive features and outperform a linear interpolation benchmark by 60\%. 
 
 ## Data provided in this repository
 ### 1. Prediction files
@@ -28,7 +28,7 @@ The file `kmm_population_predictions_1960s_[release date].zip` contains observat
 The file `kmm_superfips_xwalk_[release date].csv` is a county indentifier crosswalk that links our preferred, time-constant, identifier $-$ "super FIPS" codes $-$ to FIPS and NCHS codes. The process by which we build our super FIPS code is described in the appendix to our paper. In general, super FIPS-level aggregation is meaningfully different from using FIPS codes for only a handful of counties. Most common are counties in Virginia, New York City, Hawaii, and Alaska.
 
 ## A note on the years available in our data
-We include data for the 1970s and 1980s as a complement to the 1960s predictions, in terms of usability and scope. For instance, if a researcher is interested in studying a program administered in the 1960s and 1970s, our data makes it easy to use both our population predictions (`yhat`) in the 1960s and Census-based estimates (`truth`) in the 1970s without having to query another data source. Version release history can be found [here](https://github.com/henrymanley/population_predictions_1960s/commits/main/).
+We include data for the 1970s and 1980s as a complement to the 1960s predictions, in terms of usability and scope. For instance, if a researcher is interested in studying a program administered in the 1960s and 1970s, our data makes it easy to use both our population predictions (`yhat`) in the 1960s and Census-based estimates (`truth`) in the 1970s without having to query another data source. Version release history can be found [here](https://github.com/henrymanley/population_predictions_1960s/tree/main/archive).
 
 ## Our recommended implementation
 To ensure researchers use the "best" measures of population for their empirical usecase, we recommend that: 
